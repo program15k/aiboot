@@ -1,0 +1,213 @@
+/*====================================================        Menu główne */
+.menu-home-container
+{
+	width:100%;
+}
+#menu-home
+{
+	float:right;
+}
+
+
+.dropdown-menu-upa {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    float: left;
+    min-width: 10rem;
+    padding: 0;
+    margin: .125rem 0 0;
+    font-size: 15px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.15);
+   
+}
+
+ul.dropdown-menu-upa
+{
+	
+	height:0;
+	overflow:hidden;
+	border:0px solid #ddd;
+}
+.menu-item
+{
+	display:inline-block;
+	float:left;
+	margin-left:5px;
+}
+ul.dropdown-menu-upa > .menu-item
+{
+	color:#000;
+	background-color:transparent;
+	width:100%;
+	margin-left:0px;
+}
+.menu-item
+{
+	color:#000;
+	background-color:transparent;
+}
+.menu-item a
+{
+	color:#000;
+	background-color:transparent;
+}
+.menu-item a:hover
+{
+	color:#eee !important;
+	background-color:#000;
+}
+.menu-item a:active
+{
+	
+}
+.menu-item a:focus
+{
+	
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+	font-size:15px;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+
+/*===================================     I   poziom  */
+#menu-home > li:hover > ul
+{
+	display:block;
+	height:auto;
+	transition:0.5s;
+	width:100%;
+}
+#menu-home > li:hover > ul.dropdown-menu-upa
+{
+		overflow:visible;
+}
+/*===================================     II   poziom  */
+#menu-home > li >ul > li:hover > ul
+{
+	background-color:#d6d6d6;
+	display:block;
+	margin-left:100%;
+	top:0;
+	height:100%;
+	transition:height 0.5s;
+	width:100%;
+	overflow:visible;
+}
+
+
+
+/*===================================     III  poziom  */
+#menu-home > li >ul > li > ul >li:hover > ul
+{
+	display:block;
+	margin-left:100%;
+}
+#menu-home > li >ul > li > ul > li >a
+{
+	background-color:#ccc;
+}
+
+/*===================================     IV  poziom  */
+#menu-home > li >ul > li > ul > li > ul> li:hover > ul
+{
+	display:block;
+	margin-left:100%;
+}
+
+
+.affix-top
+{
+	z-index:1000;
+	width:100%;
+	position:absolute;
+	background-color:rgba(255,255,255,1);
+	transition:0.8s;
+	margin-top:0;
+}
+.affix-deeper
+{
+	z-index:1000;
+	width:100%;
+	position:fixed;
+	background-color:rgba(255,255,255,0.5);
+	transition:0.8s;
+	height:60px;
+	top:0px;
+}
+.affix-deeper-deep
+{
+	z-index:-1;
+	height:0px;
+	overflow:hidden;
+	transition:0.6s;
+	margin-top: -40px;
+}
+/*===================================     Menu media 992 px*/
+@media (max-width:992px)
+{
+	.affix-top, .affix-deeper
+	{
+		position:relative;
+		margin-top:0;
+		height:auto;
+	}
+	.menu-home-container
+	{
+		width:100%;
+	}
+		#menu-home
+	{
+		float:none;
+	}
+	.navbar-brand
+	{
+		display: block;
+		text-align: right;
+		width: 100%;
+	}
+	.menu-item
+	{
+		display:block;
+		float:none;
+		margin-left:0px;
+		padding-left:10px;
+	}
+	
+	.dropdown-menu-upa
+	{
+		position:relative;
+		top:0;
+		transition:0.3s;
+		float:none;
+		padding-left:0px;
+	}
+	#menu-home > li >ul > li:hover > ul
+	{
+		background-color:#d6d6d6;
+		display:block;
+		margin-left:0;
+		top:0;
+	}
+	
+	
+}
+

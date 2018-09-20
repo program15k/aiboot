@@ -1,0 +1,293 @@
+
+
+/*==========================      MENU GŁÓWNE  PRAWE */
+
+.nav-prawe
+{
+	padding-top:70px;
+	position:absolute;
+	top:0;
+	right:0;
+	background-color:yellow;
+	min-height:100vh;
+	transition:0.5s;
+	width:220px;
+	z-index:10;
+	margin-right:-100%;
+}
+.kitraj-nav-prawe
+{
+	transition:0.5s;
+	margin-right:0;
+	
+}
+.menu-prawe-container
+{
+	width:100%;
+}
+#menu-prawe
+{
+	float:right;
+}
+.menu-otwieracz, .menu-zamykacz
+{
+	position:absolute;
+	right:20px;
+	top:20px;
+	padding:2px 7px;
+	border:1px solid #aaa;
+	color:#fff;
+	background-color:#000;
+	z-index:1000;
+	font-size:22px;
+}
+.menu-otwieracz:hover
+{
+	color:#000;
+	background-color:#fff;
+	transition:0.3s;
+}
+.menu-zamykacz
+{
+	display:none;
+}
+
+.dropdown-menu-upa {
+    top: 90%;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    float: left;
+    min-width: 10rem;
+    padding: 0;
+    margin: .125rem 0 0;
+    font-size: 15px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.15);
+	margin-top: -5px;
+   
+}
+
+ul.dropdown-menu-upa
+{
+	
+	height:0;
+	overflow:hidden;
+	border:0px solid #ddd;
+}
+.menu-item
+{
+	margin-left:5px;
+}
+ul.dropdown-menu-upa > .menu-item
+{
+	color:#000;
+	background-color:transparent;
+	width:100%;
+	margin-left:0px;
+}
+.menu-item
+{
+	color:#000;
+	background-color:transparent;
+}
+.menu-item a
+{
+	color:#000;
+	background-color:transparent;
+}
+.menu-item a:hover
+{
+	color:#eee !important;
+	background-color:#000;
+}
+.menu-item a:active
+{
+	
+}
+.menu-item a:focus
+{
+	
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+	font-size:15px;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+
+/*======================================================     search     ============================*/	
+.searchmenubox {
+	margin:5px;
+   
+}
+.searchbutton 
+{
+    float: left;
+	width: 40px;
+	height: 35px;
+	background: rgb(186, 16, 31);
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: grey;
+	border-left: none;
+	cursor: pointer;
+}
+.searchinput
+ {
+   padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	height: 35px;
+	float: left;
+	width: 210px;
+	background: #f1f1f1;
+	margin-top: 0;
+}
+
+
+/*===================================     I   poziom  */
+#menu-prawe > li:hover > ul
+{
+	display:block;
+	height:auto;
+	transition:0.5s;
+	width:100%;
+}
+#menu-prawe > li:hover > ul.dropdown-menu-upa
+{
+		overflow:visible;
+}
+/*===================================     II   poziom  */
+#menu-prawe > li >ul > li:hover > ul
+{
+	background-color:#d6d6d6;
+	display:block;
+	top:0;
+	height:100%;
+	transition:height 0.5s;
+	width:100%;
+	overflow:visible;
+}
+
+
+
+/*===================================     III  poziom  */
+#menu-prawe > li >ul > li > ul >li:hover > ul
+{
+	display:block;
+	margin-left:100%;
+}
+#menu-prawe > li >ul > li > ul > li >a
+{
+	background-color:#ccc;
+}
+
+/*===================================     IV  poziom  */
+#menu-prawe > li >ul > li > ul > li > ul> li:hover > ul
+{
+	display:block;
+	margin-left:100%;
+}
+
+
+.affix-top
+{
+	z-index:1000;
+	width:100%;
+	position:absolute;
+	background-color:rgba(255,255,255,1);
+	transition:0.8s;
+	margin-top:0;
+}
+.affix-deeper
+{
+	z-index:1000;
+	width:100%;
+	position:fixed;
+	background-color:rgba(255,255,255,0.5);
+	transition:0.8s;
+	height:60px;
+	top:0px;
+}
+.affix-deeper-deep
+{
+	z-index:-1;
+	height:0px;
+	overflow:hidden;
+	transition:0.6s;
+	margin-top: -40px;
+}
+/*===================================     Menu media 992 px*/
+@media (max-width:992px)
+{
+	.affix-top, .affix-deeper
+	{
+		position:relative;
+		margin-top:0;
+		height:auto;
+	}
+	.menu-prawe-container
+	{
+		width:100%;
+	}
+		#menu-prawe
+	{
+		float:none;
+	}
+	.navbar-brand
+	{
+		display: block;
+		text-align: right;
+		width: 100%;
+	}
+	.menu-item
+	{
+		display:block;
+		float:none;
+		margin-left:0px;
+		padding-left:10px;
+	}
+	
+	.dropdown-menu-upa
+	{
+		position:relative;
+		top:0;
+		transition:0.3s;
+		float:none;
+		padding-left:0px;
+	}
+	#menu-prawe > li >ul > li:hover > ul
+	{
+		background-color:#d6d6d6;
+		display:block;
+		margin-left:0;
+		top:0;
+	}
+	
+	
+}
+
+@media (max-width:468px)
+{
+	.nav-prawe
+	{
+		width:100%;
+	}
+}

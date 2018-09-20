@@ -1,0 +1,826 @@
+
+@import url(http://fonts.googleapis.com/css?family=Monda:700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Estebans&subset=latin,latin-ext);
+
+
+
+
+
+
+* 
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+	outline: 0;
+	box-sizing:border-box;
+	}
+body 
+{	
+	overflow-x:hidden;
+	background-color:#kolor-tlo;
+	font-family: 'Esteban', sans-serif;
+	font-size: 15px;
+    line-height: 24px;
+	font-weight: 300;
+	color: #kolor-text;
+	letter-spacing:1px;
+}	
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+  display: block;
+}
+
+/*==============================================================      TYPOGRAFIA    */
+/*==============================================================  */
+/*==============================================================  */
+a 
+	{
+	color:#kolor-link;
+	text-decoration:none;
+	transition:.3s;
+	}
+a:hover
+	{
+	color:#kolor-link-hover;
+	text-decoration:none;
+	transition:.3s;
+	}
+.btn
+{
+	background-color:#kolor-btn;
+	color:#kolor-btn-text;
+	transition:.3s;
+}
+.btn:hover
+{
+	background-color:#kolor-btn-hover;
+	color:#kolor-btn-text-hover;
+	transition:.3s;
+}
+.btn-outline-primary
+{
+	background-color:transparent;
+	border:1px solid #kolor-ramki;
+}
+.btn-outline-primary:hover
+{
+	border:1px solid #kolor-ramki-hover;
+}
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: 'Monda', sans-serif;
+	font-weight: 700;
+	padding-left:5px;
+	color:#kolor-heders;
+	}
+h1
+	{
+	letter-spacing:4px;
+	font-size: 38px;
+	}
+h2
+	{
+	font-size: 32px;
+	letter-spacing:3px;
+	}
+h3
+	{
+	letter-spacing:2px;
+	font-size: 26px;
+	}
+h4
+	{
+	font-size: 22px;	
+	line-height: 1.5;
+	letter-spacing:1px;
+	}
+h5
+	{
+	font-size: 18px;	
+	line-height: 1.5;
+	letter-spacing:1px;
+	}
+p
+	{
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing:1px;
+	font-family: "esteban",sans-serif;	
+	padding:5px;
+}
+
+ul 
+	{
+	padding:10px;
+	margin-left:10px;
+	font-size:16px;
+	list-style-type: none;
+	}
+	
+/*==========================     FORM   =========*/
+label
+{
+	padding-bottom:10px;
+	font-weight:normal;
+	width:100%;
+}
+input, textarea, select
+{
+	padding:10px;
+	margin-top:5px;
+	width:100%;
+	border:1px solid #68a;
+	letter-spacing:1px;
+	font-size:18px;
+}
+textarea
+{
+	height:250px;
+}
+input[type=submit]
+{
+	max-width:50%;
+	color:#1c293a;
+}
+input[type=submit]:hover
+{
+	max-width:50%;
+	color:#1c293a;
+	background-color:#dbe3de;
+}
+	
+/*=========================  WŁASNE KLASY TYPOGRAFIA*/	
+
+.img
+{
+	max-width:100%;
+	height:auto;
+	display:block;
+	margin:0 auto;
+}
+.tlo
+{
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-attachment:fixed;
+}
+.tlo-nofixed
+{
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+	
+}
+.zaslona
+	{
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(255,255,255,.4);
+	z-index:500;
+	}
+.no-padding
+	{
+	padding-left:0;
+	padding-right:0;
+	}
+.padding30
+	{
+	padding:30px 5px;
+	}
+.padding10
+	{
+	padding:10px 5px;
+	}
+
+.border1
+	{
+	border:2px solid #008ec8;
+	}
+.maxwidt450
+	{
+	max-width:450px;
+	width:100%;
+	margin:0 auto;
+	background-color:#fff;
+	}
+.margintop20
+	{
+	margin-top:20px;
+	}
+.przekladka
+	{
+	display:block;
+	margin:30px auto;
+	width:70%;
+	padding-top:30px;
+	border-bottom:1px solid #e10505 ;
+	}
+	
+/* ============================  			TOP BAR - KONTAKT/SOCIAL     ====================*/
+/* ============================*/
+#top-bar
+{
+	background-color: #kolor-glowny-2;
+	padding:10px 0;
+	font-size:13px;
+}
+#top-bar i
+{
+	color:#fff;
+}
+#top-bar a
+{
+	color:#ccc;
+	padding:10px;
+}
+#top-bar a:hover
+{
+	color:#02aeae;
+	padding:10px;
+}
+.social-bar
+{
+	float:right;
+	margin:auto;
+	margin-right:5px;
+}
+.social-bar i
+{
+	font-size:16px;
+	color:#aaa;
+	padding:5px;
+}
+#top-bar i:hover 
+{
+	font-size:16px;
+	color:#02aeae;
+	padding:5px;
+	transition:0.4s;
+}
+	
+/* =======================================================            BANER    ======  */
+/* ======================================================= */
+/* ======================================================= */
+
+
+
+	
+/* ========================================================             scroltop */
+#scrolltop
+{
+	font-size:2em;
+	width:50px;
+	text-align:right;
+	bottom:10px;
+	letter-spacing: 0em;
+	position:fixed;
+	right:5px;
+}
+#scrolltop > a 
+{
+	margin:3px;
+	display:none;
+	padding:6px;
+	border:2px solid #999;
+	color:rgba(102,138,196,.6);	
+	opacity:.7;
+	background-color:#ccf;
+}
+#scrolltop >a:hover 
+{
+	opacity:.6;	
+	color:#09144a;
+	border:2px solid #09144a;
+}
+
+/*====================================================            footer */
+	
+.navbar-toggle {
+    position: absolute;
+    right: 1px;
+    top: 20px;
+}
+footer
+{
+	background-color:#111;
+	color:#ccc;
+	text-align:center;
+}
+.footer-area
+{
+	margin-left:2em;
+}
+.widget
+{
+	padding:10px;
+	margin-bottom:20px;
+	text-align:left;
+}
+.copybar
+{
+	padding:10px;
+	background-color:#111;
+}
+
+
+.link-tabela
+{
+	text-align:center;
+	padding:20px;
+}
+#menu-dolne
+{
+	margin:0 auto;
+}
+#menu-dolne .nav-link
+{
+	color:#02aeae;
+}
+#menu-dolne .nav-link:hover
+{
+	color:#fff;
+}
+
+/* =======================================================             PARALLAXA  ======  */
+	
+.parallax
+	{
+	padding:0px 0;
+	position:relative;
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-attachment:fixed;
+	}
+#parallaxa
+	{
+	overflow:hidden;
+	text-align:center;
+	
+	}
+.parallax-content
+	{
+	letter-spacing:.2em;
+	text-align:left;
+	position:absolute;
+	top:100px;
+	width:100%;
+	}
+	
+	/*==========================================================   GALLERIA  podstawowa  ===========  */
+#galeria
+{
+	padding:40px 0;
+	background-color:#2b8101;
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-attachment:fixed;
+}
+#galeria header
+{
+	text-align:center;
+	padding-bottom:40px;
+	
+}
+#galeria a
+{
+	display:block;
+	position:relative;
+}
+
+.galery-box
+{
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	padding-bottom:60%;
+	transition:0.8s;
+}
+.galery-box:hover
+{
+	background-size:120% auto;
+	transition:0.8s;
+}
+.galery-box-wrap
+{
+	margin:5px;
+	padding:2px;
+	border:1px solid #eee;
+}
+.galery-box-wrap:hover 
+{
+	border:1px solid #fff;
+	transition:0.4s;
+}
+.one-cert-wrap
+{
+    width: 33.333%;
+    float: left;
+    padding: 10px;
+    z-index: 100;
+}
+.one-certyfikat
+{
+	margin:5px;
+	border:1px solid #ddd;
+	padding:10px;
+	text-align:justify;
+	height:280px;	
+	background-color:#fff;
+	background-color:rgba(250,250,250,0.7);
+}
+@media (max-width:767px)
+	{
+	.one-galeria
+		{
+		width:33.333%;
+		padding-bottom:18%;	
+		}
+	.one-cert-wrap
+		{
+		width:50%;
+		float:left;
+		padding:10px;
+		z-index:100;
+		}
+	}
+@media (max-width:550px)
+	{
+	.one-galeria
+		{
+		width:50%;
+		padding-bottom:25%;	
+		}
+	}
+@media (max-width:380px)
+	{
+	.one-galeria
+		{
+		width:100%;
+		padding-bottom:25%;	
+		}
+	.one-cert-wrap
+		{
+		width:100%;
+		float:none;
+		padding:10px;
+		z-index:100;
+		}
+	}		
+#uslugi ul
+{
+	list-style-type: none;
+	max-width:600px;
+	display:block;
+	margin:0 auto;
+
+}
+#uslugi li
+{
+	border-left:4px solid #f07c00;
+	padding:10px 20px;
+	margin:10px;
+	background-color:#ddd;
+	background-color:rgba(250,250,250,0.5);
+	transition:0.3s;
+	font-size:24px;
+	font-weight:bold;
+	color:#444;
+}
+#uslugi li:hover
+{
+	background-color:#fff;
+	background-color:rgba(250,250,250,0.9);
+	border-left:18px solid #f07c00;
+	transition:0.5s;
+}
+.one-usluga
+{
+	border:1px solid #ddd;
+	border:1px solid rgba(205,32,39,.1);
+	padding:3px;
+	min-height:200px;
+	background-size:100% auto;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+	position:relative;
+	transition:0.5s;
+}
+.one-usluga:hover
+{
+	background-size:120% auto;
+	transition:0.5s;
+	
+}
+
+.zaslona
+{
+	display:none;
+	position:absolute;
+	background-color:rgba(150,150,150,.5);
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.one-usluga:hover .zaslona
+{
+	display:block;
+	transition:0.5s;
+	background-image:url('img/foto.png');
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+
+/*======================================================         MULTI GALERIA      ==============*/
+#karuzela
+	{
+		border-top:1px solid #ccc;
+	background-color:#fff;
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+.icon-realizacja
+{
+	width:100%;
+	min-height:200px;
+	background-size:100% auto;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.realizacja:hover .icon-realizacja
+{
+		background-size:110% auto;
+	transition:0.5s;
+}
+.realizacja:hover 
+{
+	border:1px solid #aaa;
+	transition:0.5s;
+}
+.one-karuzela:hover .karuzela-inter-box
+{
+	visibility:visible;	
+	top:0px;
+	transition:0.5s;
+}
+.karuzela-inter-box p
+{
+	text-align:left;
+	padding:10px 30px;
+}
+.one-karuzela h5
+{
+	color:#fff;
+	background-color:rgba(4,86,97,1);
+	margin:0;
+	padding:20px 20px;
+	font-weight:normal;
+	font-size:20px;
+	letter-spacing:2px;
+}
+.one-karuzela a
+{
+	color:#333;
+	text-decoration:none;
+}	
+	
+
+	
+	/*======================================================     OWL        =*/
+.owl-carousel .owl-dots.disabled
+{
+	display:block;
+}
+
+.owl-dots
+	{
+	display:block;
+	text-align:center;
+	z-index:1000;
+	position:relative;
+	margin-top: 35px;
+	}
+.owl-carousel .owl-dot
+	{
+    cursor: pointer;
+    color: red;
+    border: 2px solid #fff;
+	border-radius:50% 50%;
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+	transition:0.5s;
+	}
+.owl-dots .active
+	{
+	background-color: #fff;
+	border: 1px solid #fff;
+	}
+.owl-dot:hover
+	{
+	background-color:#fff;
+	}
+	#karuzela
+{
+	background-color:#eff4ef;
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#karuzela .slide
+{
+
+}
+.karuzela-header
+{
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:40px;
+}
+.karuzela-header h3
+{
+	font-size:32px;
+	font-weight:normal;
+	letter-spacing:2px;
+}
+.one-karuzela
+{
+	padding:5px;
+	text-align:left;
+	min-height:250px;
+	
+
+}
+.icon-karuzela
+{
+	position:relative;
+	width:100%;
+	height:200px;
+	background-size:cover;
+    background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.karuzela-inter-box
+{
+	color:#333;
+	font-weight:normal;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	border:1px solid #ccc;
+	border-left:4px solid rgba(4,86,97,1);
+	background-color:rgba(235,235,235,.1);
+	
+}
+.one-karuzela:hover .karuzela-inter-box
+{
+	visibility:visible;	
+	top:0px;
+	transition:0.5s;
+}
+.karuzela-inter-box p
+{
+	text-align:left;
+	padding:10px 30px;
+}
+.one-karuzela h5
+{
+	color:#fff;
+	background-color:rgba(4,86,97,1);
+	margin:0;
+	padding:20px 20px;
+	font-weight:normal;
+	font-size:20px;
+	letter-spacing:2px;
+}
+.one-karuzela a
+{
+	color:#333;
+	text-decoration:none;
+}	
+#karuzela .owl-dots
+{
+	margin-top:0px;
+}	
+.one-karuzela:hover .przeslona-content-blog
+{
+	opacity:1;
+	bottom:0%;
+	transition:0.4s;
+	border:1px solid #aaa;
+	background-color:#fff;
+}
+.kategoria
+{
+	position:absolute;
+	bottom:0;
+	padding:5px 10px;
+	min-width:150px;
+	background-color:#fff;
+	color: #333;
+	right: 10px;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+
+/*=========================================================   ZAPYTANIA MEDIALNE  ==========*/
+/*=========================================================   ZAPYTANIA MEDIALNE  ==========*/
+/*=========================================================   ZAPYTANIA MEDIALNE  ==========*/
+
+
+/*=========================================================   1024                 ==========*/
+@media (max-width:1024px)
+{
+
+}
+/*=========================================================   768 ==========*/
+@media (max-width:768px)
+{
+	/*=============  TYPOGRAFIA    */
+	
+	h1, h2, h3, h4, h5, h6
+	{
+	font-family: 'Monda', sans-serif;
+	font-weight: 700;
+	}
+h1
+	{
+	letter-spacing:3px;
+	font-size: 26px;
+	}
+h2
+	{
+	font-size: 22px;
+	letter-spacing:2px;
+	}
+h3
+	{
+	letter-spacing:2px;
+	font-size: 22px;
+	}
+h4
+	{
+	font-size: 18px;	
+	letter-spacing:1px;
+	}
+h6
+	{
+	font-size: 16px;	
+	letter-spacing:1px;
+	}
+p
+	{
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing:1px;
+	padding:5px;
+}
+	
+	
+	
+	
+}
+/*=========================================================   425  ==========*/
+@media (max-width:425px)
+{
+
+	
+}
+
+/* ======================================================     PRELOADER   */
+#preloader 
+	{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:#ffffff;
+	z-index: 1000;
+	}
+#preloader #image 
+	{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: #ffffff url('img/load6.gif') no-repeat center;
+	background-size:cover;
+	margin: -60px 0 0 -60px;
+	}
