@@ -17,7 +17,7 @@ Template name: aiboot42
 </div>
 
 <!--  GALERIA  -->
-
+Test
 
 <section id="karuzela" style="background-color:#fff;">
 	<div  class="container-fluid tlo-nofixed" style="position:relative;padding:50px 0;background-image:url();">
