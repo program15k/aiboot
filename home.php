@@ -17,15 +17,13 @@ Template name: aiboot42
 </div>
 
 <!--  GALERIA  -->
-Test
-
 <section id="karuzela" style="background-color:#fff;">
 	<div  class="container-fluid tlo-nofixed" style="position:relative;padding:50px 0;background-image:url();">
 	<div class="container">
 		<div class="col-md-12">
 		
-			<h2 class="" style="width:100%;text-align:left;">GALERIE</span></h2>
-			<h2>dupa</h2>
+			<h2 class="" style="width:100%;text-align:left;">GALERIE</h2>
+			<h2>Nagłówek</h2>
 			<div class="przekladka" style="margin-bottom:60px;"></div>
 		</div>
 		<div class="col-md-12">
@@ -60,7 +58,7 @@ Test
 	<div  class="container-fluid tlo-nofixed" style="position:relative;padding:50px 0;background-image:url();">
 	<div class="container">
 		<div class="col-md-12">
-			<h2 class="" style="width:100%;text-align:left;">BLOG</span></h2>
+			<h2 class="" style="width:100%;text-align:left;">BLOG</h2>
 			<div class="przekladka" style="margin-bottom:60px;"></div>
 		</div>
 		<div class="col-md-12">
