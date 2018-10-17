@@ -5,13 +5,11 @@ Template name: aiboot42
 ?>
 <?php get_header(); ?>
 <!--  BANER  -->
-<div class="baner-paralax" style="position:fixed;left:0;top:0;right:0;bottom:0;z-index:-1;">
 <div class="baner" style="position:relative; height:100vh;">
 	<?php echo do_shortcode(get_theme_mod( 'slider_baner'));?>
 </div>
-</div>
 
-<main style="margin-top:100vh;">
+<main>
 <div style="position:relative;">
  <?php get_template_part('menu-dolne','php');?>
 </div>
@@ -22,7 +20,7 @@ Template name: aiboot42
 	<div class="container">
 		<div class="col-md-12">
 		
-			<h2 class="" style="width:100%;text-align:left;">GALERIE</h2>
+			<h2>GALERIE</h2>
 			<h2>Nagłówek</h2>
 			<div class="przekladka" style="margin-bottom:60px;"></div>
 		</div>

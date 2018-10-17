@@ -198,7 +198,7 @@ $(document).ready(function(){
 /*—————————————————-*/
 /*    Animacja dla scrollspy
 /*—————————————————-*/
- $(document).ready(function() {
+$(document).ready(function() {
 
     $('a[href*="#"]').on('click', function(event) {
         var target = $( this.href.substring(this.href.indexOf("#")) );
